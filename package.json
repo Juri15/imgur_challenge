@@ -1,0 +1,62 @@
+{
+	"homepage": "https://Juri15.github.io/imgur_gallery",
+	"name": "imgur-gallery",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"start": "react-scripts start",
+		"build": "sh -ac './src/environment/ .env.${REACT_APP_ENV}; react-scripts build'",
+		"build:development": "REACT_APP_ENV=development npm run build",
+		"build:next": "REACT_APP_ENV=next npm run build",
+		"build:production": "REACT_APP_ENV=production npm run build",
+		"serve": "serve -s build",
+		"lint:scss": "stylelint '**/*.scss'; exit 0",
+		"lint:es": "eslint --ext .jsx --ext .js src/",
+		"test": "react-scripts test --verbose",
+		"eject": "react-scripts eject"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.30",
+		"@fortawesome/free-solid-svg-icons": "^5.14.0",
+		"@fortawesome/react-fontawesome": "^0.1.11",
+		"@material-ui/core": "^4.11.0",
+		"@reduxjs/toolkit": "^1.4.0",
+		"@testing-library/jest-dom": "^5.11.2",
+		"@testing-library/react": "^10.4.8",
+		"@testing-library/user-event": "^12.1.1",
+		"axios": "^1.5.0",
+		"immer": "^7.0.7",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-redux": "^7.2.1",
+		"react-router-dom": "^5.2.0",
+		"redux": "^4.2.1",
+		"redux-devtools-extension": "^2.13.8",
+		"redux-thunk": "^2.3.0",
+		"sass": "^1.66.1"
+	},
+	"devDependencies": {
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-plugin-jest": "^23.20.0",
+		"eslint-plugin-react": "^7.20.5",
+		"gh-pages": "^6.0.0",
+		"jest-fetch-mock": "^3.0.3",
+		"react-scripts": "^3.4.1",
+		"stylelint": "^13.6.1",
+		"stylelint-order": "^4.1.0"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

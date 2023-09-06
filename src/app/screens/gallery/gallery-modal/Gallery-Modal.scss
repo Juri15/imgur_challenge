@@ -1,0 +1,87 @@
+@import "./../../../../assets/scss/base";
+
+.ig-gallery-modal {
+	.ig-content-wrapper {
+		background-color: var(--c4);
+		position: relative;
+
+		img {
+			background-position: 50%;
+			background-repeat: no-repeat;
+			display: block;
+			margin: 0 auto;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		.ig-content {
+			align-items: center;
+			background-color: var(--c4);
+			bottom: 0;
+			color: var(--c2);
+			left: 0;
+			position: sticky;
+			right: 0;
+			z-index: 1;
+
+			.ig-title-desc {
+				border-bottom: 1px solid var(--c7);
+				border-top: 1px solid var(--c7);
+				padding: 15px 10px;
+
+				h3 {
+					font-size: fontSize(16px);
+					font-weight: 400;
+					margin: 0;
+				}
+
+				p {
+					font-size: fontSize(15px);
+					margin: 14px 0 0;
+				}
+			}
+
+			.ig-info {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+
+				.ig-item {
+					border-right: 1px solid var(--c7);
+					cursor: help;
+					display: flex;
+					padding: 10px;
+					text-align: center;
+
+					&:not(:only-child):first-child {
+						border-left: 1px solid var(--c7);
+					}
+				}
+
+				p {
+					margin: 0 0 0 5px;
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 400px) {
+		.ig-content-wrapper {
+			.ig-content {
+				.ig-info {
+					display: block;
+
+					.ig-item {
+						border-bottom: 1px solid var(--c7);
+						justify-content: center;
+
+						&:not(:only-child):last-child {
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
