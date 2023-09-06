@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc91f428c45cc771917ad521fa2ca208",
+    "revision": "f5d26d4aedda459315040dbbeaf561c5",
     "url": "/imgur_challenge/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imgur_challenge/static/css/5.932f9bb3.chunk.css"
   },
   {
-    "revision": "f19ef6b47af321810f06",
+    "revision": "f6260cec6ead8983e8c4",
     "url": "/imgur_challenge/static/css/main.774c2b78.chunk.css"
   },
   {
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imgur_challenge/static/js/5.289e9645.chunk.js"
   },
   {
-    "revision": "f19ef6b47af321810f06",
-    "url": "/imgur_challenge/static/js/main.94dadcca.chunk.js"
+    "revision": "f6260cec6ead8983e8c4",
+    "url": "/imgur_challenge/static/js/main.f750b4af.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/imgur_challenge/static/js/main.94dadcca.chunk.js.LICENSE.txt"
+    "url": "/imgur_challenge/static/js/main.f750b4af.chunk.js.LICENSE.txt"
   },
   {
     "revision": "5ae44b1d666004f51c49",
