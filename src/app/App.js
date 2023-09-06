@@ -39,7 +39,7 @@ const App = () => {
 						<LinearProgress style={appStyles.linearProgress} />
 					}
 				>
-					<BrowserRouter basename="/imgur_gallery">
+					<BrowserRouter basename="/imgur_challenge">
 						<header className="ig-header">
 							<Link to={ENV().ROUTING.HOME}>
 								<img src={Logo} alt="app-logo" />
